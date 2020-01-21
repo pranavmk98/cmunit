@@ -1,5 +1,8 @@
 name: XPI Generation
-on: [push]
+on:
+    push:
+        branches:
+            workflow
 
 jobs:
    xpi-job:
@@ -7,5 +10,6 @@ jobs:
        runs-on: ubuntu-latest
        steps:
            - name: Create XPI file
-             run: ls
-             working-directory: ./
+             run: |
+                 cd src
+                 ls -la
