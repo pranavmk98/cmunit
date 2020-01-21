@@ -7,5 +7,5 @@ jobs:
        runs-on: ubuntu-latest
        steps:
            - name: Create XPI file
-             run: cd src && zip -r cmunits.xpi . && mv cmunits.xpi ../
+             run: pwd && ls
              working-directory: ./
