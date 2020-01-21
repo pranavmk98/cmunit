@@ -8,3 +8,4 @@ jobs:
        steps:
            - name: Create XPI file
              run: cd src && zip -r cmunits.xpi . && mv cmunits.xpi ../
+             working-directory: ./
